@@ -7,8 +7,8 @@
       "version": 1,
       "author": "MeteorNOX / contributors",
       "description": "DeepSeek Balance Whale Widget 手机适配版。原版鲸鱼娘、点击弹性反馈、拖动贴边与左侧翻转；读取手机配置的官方 DeepSeek API 余额，前台每分钟刷新。未移植桌面账本、逐轮费用、音效及自定义泡泡编辑器。",
-      "url": "https://raw.githubusercontent.com/mionio233-collab/dsh-go-plugins/8843893604744ea4d75b9a14427c999e7b01efdb/plugins/balance-whale.dshgo.json",
-      "sha256": "048fa409d98d704453ebb2218293fd5f14a3afe35757a97c35fd9c25b076a89e"
+      "url": "https://raw.githubusercontent.com/mionio233-collab/dsh-go-plugins/baee372fefb8957c4264fa9326db24c090f8ea4a/plugins/balance-whale.dshgo.json",
+      "sha256": "05d309d4e54adb5a5cae71a3e34131004ed3ec91cfa083ae694be15431c7e162"
     },
     {
       "id": "community.dsh.pet",
@@ -16,8 +16,8 @@
       "version": 1,
       "author": "zhu1090093659 / dsh-pet contributors",
       "description": "dsh-pet 手机适配版。保留原版鲸鱼娘精灵图与帧时长，支持待机、工作、点击挥手及拖动记忆。当前未移植 Live2D、宠物工坊、喂食与亲密度系统。",
-      "url": "https://raw.githubusercontent.com/mionio233-collab/dsh-go-plugins/8843893604744ea4d75b9a14427c999e7b01efdb/plugins/dsh-pet.dshgo.json",
-      "sha256": "52d3d0819490fb2a254f8c23c27048a5114b2fd7a5eb8d60be039b322d0685c7"
+      "url": "https://raw.githubusercontent.com/mionio233-collab/dsh-go-plugins/baee372fefb8957c4264fa9326db24c090f8ea4a/plugins/dsh-pet.dshgo.json",
+      "sha256": "09c59a6d50078c27c2f943f942f82c5c281a25fc073248c258a077d2d08001d5"
     },
     {
       "id": "go.sample.mist",
@@ -25,7 +25,7 @@
       "version": 1,
       "author": "DSH Go 示例",
       "description": "适配浅色与深色模式的柔和聊天背景，可与宠物组合使用。",
-      "url": "https://raw.githubusercontent.com/mionio233-collab/dsh-go-plugins/8843893604744ea4d75b9a14427c999e7b01efdb/plugins/example-background.dshgo.json",
+      "url": "https://raw.githubusercontent.com/mionio233-collab/dsh-go-plugins/baee372fefb8957c4264fa9326db24c090f8ea4a/plugins/example-background.dshgo.json",
       "sha256": "94ee56fa5e23060b1253539fbfc87dc92b3d48a7300bf287f8c049df12387ac7"
     },
     {
@@ -34,7 +34,7 @@
       "version": 1,
       "author": "DSH Go 示例",
       "description": "为客户端添加森林绿色强调色，自动适配深色模式。",
-      "url": "https://raw.githubusercontent.com/mionio233-collab/dsh-go-plugins/8843893604744ea4d75b9a14427c999e7b01efdb/plugins/example-theme.dshgo.json",
+      "url": "https://raw.githubusercontent.com/mionio233-collab/dsh-go-plugins/baee372fefb8957c4264fa9326db24c090f8ea4a/plugins/example-theme.dshgo.json",
       "sha256": "fd810a9f71eceee2e0a8aeb62168c1f06dbb27a66f21716f0aa1ece25a6c38e4"
     }
   ]
