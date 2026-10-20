@@ -22,3 +22,6 @@ python scripts/publish-go-plugins.py --source plugins --base-url https://raw.git
 - 本仓库检查通过不代表自动合并；维护者确认格式、来源、能力说明后才会上架。
 
 协议见 [FORMAT.md](docs/FORMAT.md)。商城更新应保留插件 ID，增加 version；安装或更新后由用户自行启用。
+
+Windows 开发者请保持 JSON 文件为 LF 换行；本仓库的 .gitattributes 已固定 LF，避免提交时换行转换造成哈希不一致。
+
