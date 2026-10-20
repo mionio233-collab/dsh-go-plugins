@@ -9,7 +9,7 @@
 打开 DSH Go 的「插件 → 商城」，在第三方目录中填写：
 
 ```text
-https://raw.githubusercontent.com/mionio233-collab/dsh-go-plugins/main/dsh-go-catalog.json
+https://raw.githubusercontent.com/mionio233-collab/dsh-go-plugins/refs/heads/main/dsh-go-catalog.json
 ```
 
 选择插件 → 预览与确认安装 → 在「已安装」中启用。也可下载下表的 `.dshgo.json`，在 App「从文件安装插件」中导入。新宠物包需要支持精灵图和余额能力的 App（versionCode 10008 起）。本仓库不提供 Android APK。
