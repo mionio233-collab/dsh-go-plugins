@@ -1,0 +1,31 @@
+name: 提交插件
+description: 申请收录 DSH Go 插件或发布更新
+title: "[插件收录] "
+body:
+  - type: input
+    id: repository
+    attributes:
+      label: 公开源码仓库
+      placeholder: https://github.com/owner/repository
+    validations:
+      required: true
+  - type: input
+    id: catalog
+    attributes:
+      label: dsh-go-catalog.json HTTPS 直链
+    validations:
+      required: true
+  - type: textarea
+    id: features
+    attributes:
+      label: 名称、作者、版本与功能
+      description: 说明支持的手机功能、最低 App 版本，以及与桌面版的区别。
+    validations:
+      required: true
+  - type: textarea
+    id: license
+    attributes:
+      label: 代码和素材来源与许可
+      description: 第三方图片请单独列明来源，不要提交密钥或私人数据。
+    validations:
+      required: true

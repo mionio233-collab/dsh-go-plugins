@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "go.sample.mist",
+  "name": "雾蓝背景",
+  "version": 1,
+  "author": "DSH Go 示例",
+  "description": "适配浅色与深色模式的柔和聊天背景，可与宠物组合使用。",
+  "minAppVersion": 10007,
+  "background": {"lightColor": "#EFF5FA", "darkColor": "#172235", "opacity": 0.15}
+}

@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "go.sample.forest",
+  "name": "森林绿",
+  "version": 1,
+  "author": "DSH Go 示例",
+  "description": "为客户端添加森林绿色强调色，自动适配深色模式。",
+  "minAppVersion": 10007,
+  "theme": {"lightAccent": "#187454", "darkAccent": "#7CDBB4"}
+}

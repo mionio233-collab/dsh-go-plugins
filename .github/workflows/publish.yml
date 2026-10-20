@@ -1,0 +1,38 @@
+# Copy into YOUR plugin repository as .github/workflows/publish.yml.
+# Also copy scripts/publish-go-plugins.py and put packages in plugins/.
+name: Publish DSH Go plugin catalogue
+on:
+  push:
+    paths:
+      - 'plugins/*.dshgo.json'
+      - 'scripts/publish-go-plugins.py'
+      - '.github/workflows/publish.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: go-plugin-catalogue
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: github.ref_name == github.event.repository.default_branch
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate packages and generate pinned catalogue
+        env:
+          PLUGIN_REPOSITORY: ${{ github.repository }}
+          PLUGIN_REVISION: ${{ github.sha }}
+        run: python scripts/publish-go-plugins.py --source plugins --base-url "https://raw.githubusercontent.com/$PLUGIN_REPOSITORY/$PLUGIN_REVISION/plugins" --output dsh-go-catalog.json
+      - name: Commit catalogue
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add dsh-go-catalog.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Update DSH Go plugin catalogue'
+            git push
+          fi
